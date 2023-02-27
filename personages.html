@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/rollbar.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <link rel="icon" href="./src/pictures/resident-evil-logo-02.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+    <title>Resident Evil Database</title>
+    
+</head>
+<body class="background-personages">
+    <header class="blur">        
+        <div class="logo">
+            <a href="./credits.html">                                            
+                <img src="./src/pictures/resident-evil-logo-04.png" alt="Nome Resident Evil">
+            </a>
+        </div>        
+        <div class="return-btn-container">
+            <a href="./index.html">
+                <button class="btn-style">
+                    <span>Return</span>
+                </button>
+            </a>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="./history.html">
+                        <button class="btn-style">
+                            <span>História</span>
+                        </button>
+                    </a>
+                </li>    
+                <li>
+                    <a href="./personages.html">
+                        <button class="btn-style">
+                            <span>Personagens</span>
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="./games.html">
+                        <button class="btn-style">
+                            <span>Jogos</span>
+                        </button>
+                    </a>
+                </li>                    
+                <li>
+                    <a href="./credits.html">
+                        <button class="btn-style">
+                            <span>Créditos</span>
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </nav>           
+    </header>
+    <main class="main-alignment">
+        <div class="main-header">
+            <h1> Procure pelo nome</h1>
+            <div class="main-header-search-bar">
+               <input type="search" id="inputSearch">
+               <button id="buttonSearch"><img src="./src/pictures/search-icon.png" alt="Bússola da caixa de busca"></button>
+            </div>               
+        </div>
+        <div class="main-style-personages">        
+            <div class="personages-grid">
+                <div class="personages">
+                    <div id="leon-img" onclick="ShowCard(elements)">
+                        <img src="./src/pictures/leon-png-03.png" alt="Imagem Leon">
+                    </div>
+                    <div id="leon-txt" class="personage-txt-style" onclick="ReturnCard(elements)">
+                        <div class="gif-gun-alignment">
+                            <img src="./src/pictures/resident-evil-gun.gif" alt="Gif arma girado">
+                        </div>
+                        <p>
+                            <span>Nome:</span><br> Leon S. Kennedy <br> <br>
+                            <span>Descrição:</span><br> Lorem ipsum dolor sit amet, consectetur adipisicing el
+                            it. Beatae placeat officiis fuga provident! Id cumque assumenda eaque? Magni, 
+                            earum ipsum soluta fugiat dolorum error exercitationem, reiciendis ni
+                            si esse, ut ipsa.
+                        </p>
+                    </div>
+                </div>    
+                <div class="personages">
+                    <div id="ada-img" onclick="ShowCard(elements01)">
+                        <img src="./src/pictures/ada-png-03.png" alt="Imagem Ada">
+                    </div>
+                    <div id="ada-txt" class="personage-txt-style" onclick="ReturnCard(elements01)">
+                        <div class="gif-gun-alignment">
+                            <img src="./src/pictures/resident-evil-gun.gif" alt="Gif arma girado">
+                        </div>
+                        <p>
+                            <span>Nome:</span><br> Ada Wong <br> <br>
+                            <span>Descrição:</span><br> Lorem ipsum dolor sit amet, consectetur adipisicing el
+                            it. Beatae placeat officiis fuga provident! Id cumque assumenda eaque? Magni, 
+                            earum ipsum soluta fugiat dolorum error exercitationem, reiciendis ni
+                            si esse, ut ipsa.
+                        </p>
+                    </div>
+                </div>    
+                <div class="personages">
+                    <div id="krauser-img" onclick="ShowCard(elements02)">
+                        <img src="./src/pictures/krauser-png-01.png" alt="Imagem Krauser">
+                    </div>
+                    <div id="krauser-txt" class="personage-txt-style" onclick="ReturnCard(elements02)"> 
+                        <div class="gif-gun-alignment">
+                            <img src="./src/pictures/resident-evil-gun.gif" alt="Gif arma girado">
+                        </div>
+                        <p>
+                            <span>Nome:</span><br> Jack Krauser <br> <br>
+                            <span>Descrição:</span><br> Lorem ipsum dolor sit amet, consectetur adipisicing el
+                            it. Beatae placeat officiis fuga provident! Id cumque assumenda eaque? Magni, 
+                            earum ipsum soluta fugiat dolorum error exercitationem, reiciendis ni
+                            si esse, ut ipsa.
+                        </p>
+                    </div>
+                </div>    
+                <div class="personages">
+                    <div id="ashley-img" onclick="ShowCard(elements03)">
+                        <img src="./src/pictures/ashley-png-01.png" alt="Imagem Ashley">
+                    </div>
+                    <div id="ashley-txt" class="personage-txt-style" onclick="ReturnCard(elements03)">
+                        <div class="gif-gun-alignment">
+                            <img src="./src/pictures/resident-evil-gun.gif" alt="Gif arma girado">
+                        </div>
+                        <p>
+                            <span>Nome:</span><br> Ashley Graham <br> <br>
+                            <span>Descrição:</span><br> Lorem ipsum dolor sit amet, consectetur adipisicing el
+                            it. Beatae placeat officiis fuga provident! Id cumque assumenda eaque? Magni, 
+                            earum ipsum soluta fugiat dolorum error exercitationem, reiciendis ni
+                            si esse, ut ipsa.
+                        </p>
+                    </div>
+                </div>
+                <div class="personages">
+                    <div id="chris-img" onclick="ShowCard(elements04)">
+                        <img src="./src/pictures/chris-png.png" alt="Imagem Chris Redfield">
+                    </div>
+                    <div id="chris-txt" class="personage-txt-style" onclick="ReturnCard(elements04)">
+                        <div class="gif-gun-alignment">
+                            <img src="./src/pictures/resident-evil-gun.gif" alt="Gif arma girado">
+                        </div>
+                        <p>
+                            <span>Nome:</span><br> Chris Redfield <br> <br>
+                            <span>Descrição:</span><br> Lorem ipsum dolor sit amet, consectetur adipisicing el
+                            it. Beatae placeat officiis fuga provident! Id cumque assumenda eaque? Magni, 
+                            earum ipsum soluta fugiat dolorum error exercitationem, reiciendis ni
+                            si esse, ut ipsa.
+                        </p>
+                    </div>
+                </div>    
+                <div class="personages">
+                    <div id="claire-img" onclick="ShowCard(elements05)">
+                        <img src="./src/pictures/claire-png-02.png" alt="Imagem Claire Redfield">
+                    </div>
+                    <div id="claire-txt" class="personage-txt-style" onclick="ReturnCard(elements05)">
+                        <div class="gif-gun-alignment">
+                            <img src="./src/pictures/resident-evil-gun.gif" alt="Gif arma girado">
+                        </div>
+                        <p>
+                            <span>Nome:</span><br> Claire Redfield <br> <br>
+                            <span>Descrição:</span><br> Lorem ipsum dolor sit amet, consectetur adipisicing el
+                            it. Beatae placeat officiis fuga provident! Id cumque assumenda eaque? Magni, 
+                            earum ipsum soluta fugiat dolorum error exercitationem, reiciendis ni
+                            si esse, ut ipsa.
+                        </p>
+                    </div>
+                </div>    
+                <div class="personages">
+                    <div id="hunk-img" onclick="ShowCard(elements06)">
+                        <img src="./src/pictures/hunk.png" alt="Imagem Hunk">
+                    </div>
+                    <div id="hunk-txt" class="personage-txt-style" onclick="ReturnCard(elements06)"> 
+                        <div class="gif-gun-alignment">
+                            <img src="./src/pictures/resident-evil-gun.gif" alt="Gif arma girado">
+                        </div>
+                        <p>
+                            <span>Nome:</span><br> Hunk <br> <br>
+                            <span>Descrição:</span><br> Lorem ipsum dolor sit amet, consectetur adipisicing el
+                            it. Beatae placeat officiis fuga provident! Id cumque assumenda eaque? Magni, 
+                            earum ipsum soluta fugiat dolorum error exercitationem, reiciendis ni
+                            si esse, ut ipsa.
+                        </p>
+                    </div>
+                </div>    
+                <div class="personages">
+                    <div id="wesker-img" onclick="ShowCard(elements07)">
+                        <img src="./src/pictures/wesker.png" alt="Imagem Albert Wesker">
+                    </div>
+                    <div id="wesker-txt" class="personage-txt-style" onclick="ReturnCard(elements07)">
+                        <div class="gif-gun-alignment">
+                            <img src="./src/pictures/resident-evil-gun.gif" alt="Gif arma girado">
+                        </div>
+                        <p>
+                            <span>Nome:</span><br> Albert Wesker <br> <br>
+                            <span>Descrição:</span><br> Lorem ipsum dolor sit amet, consectetur adipisicing el
+                            it. Beatae placeat officiis fuga provident! Id cumque assumenda eaque? Magni, 
+                            earum ipsum soluta fugiat dolorum error exercitationem, reiciendis ni
+                            si esse, ut ipsa.
+                        </p>
+                    </div>
+                </div>                                       
+            </div>            
+        </div>
+        <div class="read-more-btn">
+            <button>Mostrar mais</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-alignment">
+            <span>Developed by:</span><p>Victor Hugo</p>
+        </div>
+    </footer>      
+    <script type="text/javascript" src="./src/js/page-effect.js"></script>
+    <script type="text/javascript" src="./src/js/flip-card.js"></script>    
+    <script type="text/javascript" src="./src/js/search-bar.js"></script>
+</body>
+</html>
