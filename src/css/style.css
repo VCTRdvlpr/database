@@ -375,8 +375,8 @@ footer{
 }
 
 .read-more-btn{    
-    height: 40px;
-    width: 20%;
+    height: 60px;
+    width: 200px;
     margin-bottom: 50px;        
 }
 
@@ -488,3 +488,24 @@ footer{
     align-items: center;
 }
 
+@media(max-width:1080px){
+    .personages-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 25%);
+    }
+
+    .main-style-personages{
+        width: 90%;
+        margin:50px auto;
+        display: flex;
+        justify-content: center;        
+        border: none;
+        border-radius: 90px;
+        background-color: transparent;        
+    }     
+
+    .games{
+        grid-template-columns: repeat(1, 100%);
+        gap: 50px;
+    }
+}
