@@ -508,4 +508,8 @@ footer{
         grid-template-columns: repeat(1, 100%);
         gap: 50px;
     }
+
+    .database{
+        flex-direction: column;
+    }
 }
